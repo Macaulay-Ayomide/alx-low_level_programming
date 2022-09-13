@@ -21,10 +21,10 @@ int main(void)
 	{
 		i++;
 	}
-	c = atoi(text[i]);
+	c = (int) text[i];
 	if (c > 5 && n > 0)
 	{
-		printf("Last digit of %d is %c and is greater than 5 \n", text[i]);
+		printf("Last digit of %d is %c and is greater than 5 \n", n,text[i]);
 	} else if (c == 0 && n >= 0)
 	{
 		printf("Last digit of %d is %c and is 0\n", n, text[i]);
@@ -37,6 +37,7 @@ int main(void)
 		} else 
 		{
 			printf("Last digit of %d is -%c and is less than 6 and not 0\n", n, text[i]);
+		}
 	}
 	return (0);
 }
