@@ -1,19 +1,18 @@
 #include "main.h"
-
 /**
  * main - Entry point
  * Description: 'the program's description'
  * Return: Always 0 (Success)
  */
 
-
-void print_alphabet(void)
+int print_last_digit(int a)
 {
-	int i;
-
-	for(i = 97;i < 123; i++)
+	int n;
+	if (a < 0)
 	{
-		_putchar(i);
+		a = a * (-1);
 	}
-	_putchar(10);
+	n = a % 10;
+	_putchar(n + '0');
+	return (n);
 }
