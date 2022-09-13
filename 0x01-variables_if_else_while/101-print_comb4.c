@@ -7,36 +7,39 @@
  */
 int main(void)
 {
-	int n,c,w,nt,i,k,j,ntr;
+	int n,c,o,w,nt,ntc,nc,i;
 
 	c = 44;
 	w = 32;
-	n = 48;
-	nt = 49;
-	ntr = 50; 
-	for (k = n;  k < 56; k++)
+	n = 49;
+	nt = 50;
+	o = 48;
+	ntc = 50;
+	nc = 49;
+	while (o < 57)
 	{
-		putchar(n);
-		printf("----------");
-		i=j= 0;
-		printf("%d %3d", i,j);
-		for (i = nt; i < 57; i++)
+		while (n < 58)
 		{
-			for (j = ntr; j < 58; j++)
+			for (i = nt; i < 58; i++)
 			{
+				putchar(o);
 				putchar(n);
 				putchar(i);
-				putchar(j);
-				if (!((n == 55) && (i == 56) && (j == 58)))
+				if (!((n == 56) && (i == 57) && (o == 55)))
 				{
 					putchar(c);
 					putchar(w);
 				}
 			}
-		        ntr++;	
+			nt++;
+			n++;
 		}
-		nt++;
-		n++;
+		o++;
+		nc++;
+		ntc++;
+		n = nc;
+		nt = ntc;
+		
 	}
 	putchar('\n');
 	return (0);
