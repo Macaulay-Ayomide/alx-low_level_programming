@@ -7,16 +7,17 @@
  */
 int main(void)
 {
-	int n;
+	int n,c,w;
 
-	for (n = 97; n < 123; n++)
+	c = 44;
+	w = 32;
+	for (n = 48; n < 58; n++)
 	{
-		if (n != 101)
+		putchar(n);
+		if (n != 57)
 		{
-			if (n != 113)
-			{
-				putchar(n);
-			}
+			putchar(c);
+			putchar(w);
 		}
 	}
 	putchar('\n');

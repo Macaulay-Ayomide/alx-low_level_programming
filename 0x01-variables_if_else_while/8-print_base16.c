@@ -9,15 +9,13 @@ int main(void)
 {
 	int n;
 
-	for (n = 97; n < 123; n++)
+	for (n = 48; n < 58; n++)
 	{
-		if (n != 101)
-		{
-			if (n != 113)
-			{
-				putchar(n);
-			}
-		}
+		putchar(n);
+	}
+	for (n = 97; n < 103; n++)
+	{
+		putchar(n);
 	}
 	putchar('\n');
 	return (0);
