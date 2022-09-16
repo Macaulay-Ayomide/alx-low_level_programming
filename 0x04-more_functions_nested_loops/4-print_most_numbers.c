@@ -1,9 +1,8 @@
 #include "main.h"
 
 /**
- * main - Entry point
- * Description: 'this is a file comtaining a function called _isupper()'
- * @c >>> a inputed parameter caontaing a character
+ * print_most_numbers - Print number exceeding two and four
+ * Description: recieves no input, only print to std output
  * Return: Always 0 (Success)
  */
 
