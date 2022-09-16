@@ -9,7 +9,7 @@
 
 void print_number(int n)
 {
-	int n;
+	int n, n0, n1, n2, n3;
 
 	if (n < 10)
 	{
