@@ -12,20 +12,16 @@ void more_numbers(void)
 	int i, j, k, l;
 
 	i = 49;
-	j = 48;
-	k = 0;
-	l = 0;
-	while (k < 10)
+	for (k = 0; k < 10; ++k)
 	{
 		l = 0;
 		j = 48;
-		while (l < 14)
+		for (l = 0; l < 15; ++l)
 		{
 			if (l >= 10)
 			{
 				_putchar (i);
 			}
-			++l;
 			_putchar (j);
 			if ( l == 9)
 			{
@@ -37,6 +33,5 @@ void more_numbers(void)
 				}
 		}
 		_putchar (10);
-		++k;
 	}
 }
