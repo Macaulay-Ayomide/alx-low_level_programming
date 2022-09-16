@@ -16,6 +16,14 @@ int main (void)
 	c = n / 2;
 	lp = 3;
 	i = 5;
+	while (i < c)
+	{ 
+		if (i % 2 == 0)
+		{
+			printf("Is even %d",i);
+			i++;
+		}
+	}
 	n = i + n;
 	printf("%d", c);	
 	printf("%d", lp);
