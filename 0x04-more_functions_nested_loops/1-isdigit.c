@@ -1,10 +1,11 @@
 #include "main.h"
 
 /**
- * main - Entry point
- * Description: 'this is a file comtaining a function called _isupper()'
- * @c >>> a inputed parameter caontaing a character
- * Return: Always 0 (Success)
+ * _isdigit - Check if a char is digit
+ * @c: int input less than 128
+ * Description: Takes an int and checks if its within the range of
+ * of digit in ascii code from 48 to 58
+ * Return: The value returned is 0
  */
 
 int _isdigit(int c)
