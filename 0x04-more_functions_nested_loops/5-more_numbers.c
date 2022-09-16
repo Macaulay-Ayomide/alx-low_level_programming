@@ -9,20 +9,32 @@
 
 void more_numbers(void)
 {
-	int c, i, j, k;
+	int i, j, k, l;
 
 	i = 49;
+	j = 48;
 	k = 0;
+	l = 0;
 	while (k < 10)
 	{
-		for (c = 48; c < 58; c++)
+		l = 0;
+		j = 48;
+		while (l < 14)
 		{
-			_putchar (c);
-		}
-		for (j = 48; j < 53; j++)
-		{
-			_putchar (i);
+			if (l >= 10)
+			{
+				_putchar (i);
+			}
+			++l;
 			_putchar (j);
+			if ( l == 9)
+			{
+				j = 48;
+			}
+				else
+				{
+					++j;
+				}
 		}
 		_putchar (10);
 		++k;

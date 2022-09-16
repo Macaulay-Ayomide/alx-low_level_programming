@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * main - Entry point
  * Description: 'this is a file comtaining a function called _isupper()'
@@ -9,46 +8,54 @@
 
 void print_number(int n)
 {
-	int n, n0, n1, n2, n3;
+	int ngv;
 
-	if (n < 10)
+	if ( n < 0)
 	{
-		_putchar (n + '0');
+		ngv = n * -1;
+		if (ngv < 10)
+		{
+			_putchar (45);
+			_putchar (ngv + '0');
+		}
+			else if (ngv < 100)
+			{
+				_putchar (45);
+				_putchar ((ngv / 10) + '0');
+				_putchar ((ngv % 10) + '0');
+			}	
+			else if (ngv < 1000)
+			{
+				_putchar (45);
+				_putchar ((ngv / 100) + '0');
+				_putchar (((ngv % 100) / 10 )+ '0');
+				_putchar (((ngv % 100) % 10) + '0');
+			}
 	}
-		else if (n < 100)
+		else if( n >= 0)
 		{
-			n0 = n / 10;
-			n1 = n % 10;
-			_putchar (n0 + '0');
-			_putchar (n1 + '0');
+			if  (n < 10)
+			{
+				_putchar (n + '0');
+			}
+				else if (n < 100)
+				{
+					_putchar ((n / 10) + '0');
+					_putchar ((n % 10) + '0');
+				}	
+				else if (n < 1000)
+				{
+					_putchar ((n / 100) + '0');
+					_putchar (((n % 100) / 10) + '0');
+					_putchar (((n % 100) % 10) + '0');
+				}
+
+				else if (n < 10000)
+				{
+					_putchar ((n / 1000) + '0');
+					_putchar (((n % 1000) / 100) + '0');
+					_putchar ((((n % 1000) % 100) / 10)+ '0');
+					_putchar ((((n % 1000) % 100) % 10)+ '0');
+				}
 		}
-		else if (n < 1000)
-		{	
-			n0 = n / 100;
-			n1 = (n % 100) / 10;
-			n2 = (n % 100) % 10;
-			_putchar (n0 + '0');
-			_putchar (n1 + '0');
-			_putchar (n2 + '0');
-		}
-		else if (n < 10000)
-		{	
-			n0 = n / 1000;
-			n1 = (n % 1000) / 100;
-			n2 = (n % 1000) % 100;
-			n3 = (n % 1000 ) % 100 % 10;
-			_putchar (n0 + '0');
-			_putchar (n1 + '0');
-			_putchar (n2 + '0');
-			_putchar (n3 + '0');
-		}
-		else 
-		{
-			n0 = n / 10;
-			n1 = n % 10;
-			_putchar(196)
-			_putchar (n0 + '0');
-			_putchar (n1 + '0');
-		}
-	_putchar (10);
 }

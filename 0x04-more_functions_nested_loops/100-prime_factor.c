@@ -12,20 +12,21 @@ int main (void)
 	int c, lp, i;
 	long n;
 
-	n = 612;
+	n = 612852475143;
 	c = n / 2;
-	lp = 3;
+	lp = 2;
 	i = 5;
 	while (i < c)
 	{ 
-		if (i % 2 == 0)
+		if (!(i % 2 == 0 || i % 5 == 0|| i % 3 == 0))
 		{
-			printf("Is even %d",i);
-			i++;
+			if (n % i == 0 && i > lp)
+			{
+				lp = i;
+			}
 		}
-	}
-	n = i + n;
-	printf("%d", c);	
-	printf("%d", lp);
+		++i;
+	}	
+	printf("%d \n", lp);
 	return (0);
 }
