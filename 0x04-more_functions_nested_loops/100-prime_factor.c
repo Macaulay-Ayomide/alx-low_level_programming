@@ -2,12 +2,11 @@
 
 /**
  * main - Entry point
- * Description: 'this is a file comtaining a function called _isupper()'
- * @c >>> a inputed parameter caontaing a character
+ * Description: Print th highest common factor of var n
  * Return: Always 0 (Success)
  */
 
-int main (void)
+int main(void)
 {
 	int c, lp, i;
 	long n;
@@ -17,8 +16,8 @@ int main (void)
 	lp = 2;
 	i = 5;
 	while (i < c)
-	{ 
-		if (!(i % 2 == 0 || i % 5 == 0|| i % 3 == 0))
+	{
+		if (!(i % 2 == 0 || i % 5 == 0 || i % 3 == 0))
 		{
 			if (n % i == 0 && i > lp)
 			{
@@ -26,7 +25,7 @@ int main (void)
 			}
 		}
 		++i;
-	}	
+	}
 	printf("%d \n", lp);
 	return (0);
 }

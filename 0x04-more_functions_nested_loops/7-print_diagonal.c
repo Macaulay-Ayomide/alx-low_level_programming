@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * main - Entry point
- * Description: 'this is a file comtaining a function called _isupper()'
- * @c >>> a inputed parameter caontaing a character
+ * print_diagonal - print \ as many as n time
+ * @n: length of the diagonal
+ * Description: print \ as many time as the int n to
+ * standard output
  * Return: Always 0 (Success)
  */
 

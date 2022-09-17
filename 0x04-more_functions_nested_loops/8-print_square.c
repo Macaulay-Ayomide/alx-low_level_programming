@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * main - Entry point
- * Description: 'this is a file comtaining a function called _isupper()'
- * @c >>> a inputed parameter caontaing a character
+ * print_square - this prints squares n times in form of #
+ * @n: inpu in lenght of the square
+ * Description: this repeats # n times
  * Return: Always 0 (Success)
  */
 

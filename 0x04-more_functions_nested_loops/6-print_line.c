@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * main - Entry point
- * Description: 'this is a file comtaining a function called _isupper()'
- * @c >>> a inputed parameter caontaing a character
+ * print_line - printa straight line equivalent to input
+ * @n: Lenght in int of straight line
+ * Description: Use '-' to represent straight line and
+ * printit to std output and repeat as many times as int
  * Return: Always 0 (Success)
  */
 

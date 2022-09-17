@@ -2,8 +2,8 @@
 
 /**
  * main - Entry point
- * Description: 'this is a file comtaining a function called _isupper()'
- * @c >>> a inputed parameter caontaing a character
+ * Description: A repetition of the common fizzbuzz code in
+ * my own style
  * Return: Always 0 (Success)
  */
 
@@ -24,7 +24,7 @@ int main(void)
 			}
 			else if (i % 3 == 0)
 			{
-				printf ("Fizz ");
+				printf("Fizz ");
 			}
 			else
 			{
@@ -32,6 +32,6 @@ int main(void)
 			}
 		++i;
 	}
-	printf ("\n");
+	printf("\n");
 	return (0);
 }

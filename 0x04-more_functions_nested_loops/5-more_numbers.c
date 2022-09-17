@@ -22,7 +22,7 @@ void more_numbers(void)
 				_putchar (i);
 			}
 			_putchar (j);
-			if ( l == 9)
+			if (l == 9)
 			{
 				j = 48;
 			}

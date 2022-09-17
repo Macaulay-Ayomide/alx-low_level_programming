@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * main - Entry point
- * Description: 'this is a file comtaining a function called _isupper()'
- * @c >>> a inputed parameter caontaing a character
+ * print_triangle - prints a triangle with ' ' and #
+ * @size: used to determine the lenghth given in int
+ * Description: similar to print_square but employ use of ' '
  * Return: Always 0 (Success)
  */
 
