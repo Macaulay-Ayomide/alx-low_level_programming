@@ -6,42 +6,45 @@
  * already positivr leave it unchanged
  * Return: Always 0 (Success)
  */
-
 void print_number(int n)
 {
-	int ngv;
+	int i;
 
 	if (n < 0)
 	{
-		ngv = n * -1;
-		if (ngv < 10)
+		_putchar(45);
+		n = n * -1;
+	}
+	for (i = 10; i > 0; i--)
+	{
+		if (n < 10)
 		{
-			_putchar (45);
-			_putchar (ngv + '0');
+			_putchar (n + '0');
+			break;
 		}
-			else if (ngv < 100)
+			else if (n < 100)
 			{
-				_putchar (45);
-				_putchar ((ngv / 10) + '0');
-				_putchar ((ngv % 10) + '0');
+				_putchar ((n / 10) + '0');
+				n = n % 10;
+			}
+			else if (n < 1000)
+			{
+				_putchar ((n / 100) + '0');
+				n = n % 100;
+			}
+			else if (n < 10000)
+			{
+				_putchar ((n / 1000) + '0');
+				n = n % 1000;
+				if (n < 100)
+				{
+					_putchar('0');
+				}
+			}
+			else if (n < 100000)
+			{
+				_putchar((n / 10000) + '0');
+				n = n % 10000;
 			}
 	}
-		else if (n >= 0)
-		{
-			if  (n < 10)
-			{
-				_putchar (n + '0');
-			}
-				else if (n < 100)
-				{
-					_putchar ((n / 10) + '0');
-					_putchar ((n % 10) + '0');
-				}
-				else if (n < 1000)
-				{
-					_putchar ((n / 100) + '0');
-					_putchar (((n % 100) / 10) + '0');
-					_putchar (((n % 100) % 10) + '0');
-				}
-		}
 }
