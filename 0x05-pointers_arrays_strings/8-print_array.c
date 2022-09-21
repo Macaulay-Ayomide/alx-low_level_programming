@@ -1,34 +1,30 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- *print_rev - Print the total length of a string in reverse
- * @s: takes a pointer as an argument
+ *print_array - Print the total length of a string in reverse
+ * @a: takes a pointer as an argument
+ * @n: takes int as an arguments
+ *
  * Description: Takes a string pointer and try to print the
  * the total length of the string in reverse
  * Return: The value returned is none
  */
 
-void print_rev(char *s)
+void print_array(int *a, int n)
 {
-	int i, j, flag;
+	int j;
 
-	i = 0;
-	flag = 1;
-	while (flag)
+	for (j = 0; j < n; ++j)
 	{
-		if (s[i] != '\0')
+		if (j > 0)
 		{
-			++i;
+			printf(", %d", a[j]);
 		}
 			else
 			{
-				flag = 0;
+				printf("%d", a[j]);
 			}
 	}
-	--i;
-	for (j = i; j >= 0; --j)
-	{
-		_putchar(s[j]);
-	}
-	_putchar(10);
+	printf("\n");
 }
