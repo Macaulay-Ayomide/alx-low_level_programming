@@ -54,6 +54,27 @@ int helpertwo(char *s, char * h, int n, int m, int f)
 																					}
 													}
 						/*
+						 * 	else if (n > 0 && m > 0)
+						 * 		{
+						 * 				putchar(*(h + m));
+						 * 						if (*(h + m) != *(s + n))
+						 * 								{
+						 * 											f = 0;
+						 * 													}
+						 * 															--m;
+						 * 																	return (helpertwo(s,h,n,m,f));
+						 * 																		}
+						 * 																			*/
+						else
+								{
+											return (1);
+												}
+											
+}
+
+int wildcmp(char *s1, char *s2)
+{
+		int numone, numtwo, n, flag;
 
 			n = 0;
 				flag = 1;
@@ -61,55 +82,3 @@ int helpertwo(char *s, char * h, int n, int m, int f)
 						numtwo = helper(s2, n) - 1;
 							return (helpertwo(s1, s2, numone, numtwo,flag));
 }
-
-int main(void)
-{
-	    int r;
-	        /*
-		 *     r = wildcmp("main.c", "*.c");
-		 *         printf("%d\n", r);
-		 *             r = wildcmp("main.c", "m*a*i*n*.*c*");
-		 *                 printf("%d\n", r);
-		 *                     r = wildcmp("main.c", "main.c");
-		 *                         printf("%d\n", r);
-		 *                             r = wildcmp("main.c", "m*c");
-		 *                                 printf("%d\n", r);
-		 *                                     r = wildcmp("main.c", "ma********************************c");
-		 *                                         printf("%d\n", r);
-		 *                                             r = wildcmp("main.c", "*");
-		 *                                                 printf("%d\n", r);
-		 *                                                     r = wildcmp("main.c", "***");
-		 *                                                         printf("%d\n", r);
-		 *                                                             r = wildcmp("main.c", "m.*c");
-		 *                                                                 printf("%d\n", r);
-		 *                                                                     r = wildcmp("main.c", "**.*c");
-		 *                                                                         printf("%d\n", r);
-		 *                                                                             r = wildcmp("main-main.c", "ma*in.c");
-		 *                                                                                 printf("%d\n", r);
-		 *                                                                                     */
-	        r = wildcmp("main", "main*d");
-		    printf("%d\n", r);
-		        /*
-			 *     r = wildcmp("abc", "*b");
-			 *         printf("%d\n", r);
-			 *             */
-		        return (0);
-}
-
-/*
- *  
- *  		if(*(h + m) == '*' && n != 0)
- *  				{
- *  							return(helpertwo(s,h,n,m));
- *  									}
- *  											else if((*(h + m) == '*') && n == 0)
- *  													{
- *  																return(1);
- *  																		}
- *  																				else
- *  																						{
- *  																									putchar(*(h + m));
- *  																												return (0);
- *  																														}
- *  																														 */
-
