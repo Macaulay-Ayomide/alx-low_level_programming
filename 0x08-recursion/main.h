@@ -5,11 +5,10 @@
  */
 
 void _puts_recursion(char *s);
-int helper(char *s,char *h, int n);
 void _print_rev_recursion(char *s);
-char *_strchr(char *s, char c);
-unsigned int _strspn(char *s, char *accept);
-char *_strpbrk(char *s, char *accept);
+int _strlen_recursion(char *s);
+int factorial(int n);
+int _pow_recursion(int x, int y);
 char *_strstr(char *haystack, char *needle);
 void print_chessboard(char (*a)[8]);
 void print_diagsums(int *a, int size);
