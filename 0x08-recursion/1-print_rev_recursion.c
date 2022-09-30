@@ -11,7 +11,7 @@ int helper(char *s,char *h, int n)
 {  
 	if ( *h == '\0')                                                     
 	{
-		return (n);                                                  
+		return (--n);                                                  
 	}
 	++n;
 	helper(s, h + 1, n);
