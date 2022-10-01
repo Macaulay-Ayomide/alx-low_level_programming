@@ -7,59 +7,51 @@
  */
 int main(void)
 {
-	int n,c,w,nt,i;
+	int n, mm, m, mmm, c, b, bb;
 
-	c = 44;
-	w = 32;
+	c = 48;
+	b = 48;
 	n = 48;
-	nt = 49;
-	while (n < 58)
+	b = 48;
+	bb = 48;
+	bb = bb;
+	mmm = 49;
+	mmm =mmm;
+	m = mmm;
+	mm = mmm;
+	mm =mm;
+	while (m < 57)
 	{
-		for (i = nt; i < 58; i++)
+		putchar(n);
+		putchar(c);
+		putchar(32);
+		putchar(b);
+		putchar(m);
+		putchar(44);
+		++m;
+		if (m == 57 && b < 57)
 		{
-			putchar(n);
-			putchar(i);
-			if (!((n == 56) && (i == 57)))
-			{
-				putchar(c);
-				putchar(w);
-			}
+			++b;
+			m = 0;
 		}
-		n++;
 	}
-	putchar('\n');
-	return (0);
-}
-#include <stdio.h>
-
-/**
- * main - Entry point
- * Description: 'TASK ZERO'
- * Return: Always 0 (Success)
- */
-int main(void)
-{
-	int n,c,w,nt,i;
-
-	c = 44;
-	w = 32;
-	n = 48;
-	nt = 49;
-	while (n < 58)
-	{
-		for (i = nt; i < 58; i++)
+		/*
+		else if (m == 57 && b == 57 && c < 57)
 		{
-			putchar(n);
-			putchar(i);
-			if (!((n == 56) && (i == 57)))
-			{
-				putchar(c);
-				putchar(w);
-			}
+			++c;
+			++m;
+			m = mm;
+			b = bb;
 		}
-		nt++;
-		n++;
-	}
+		else if (m == 57 && b == 57 && c == 57 && n < 57)
+		{
+			++n;
+			++b;
+			c = 0;
+			m = mmm;
+			mm = mmm;
+		}
+		}*/
 	putchar('\n');
 	return (0);
 }
