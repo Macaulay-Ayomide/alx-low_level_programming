@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * main - Entry point
  * Description: 'the program's description'
@@ -16,3 +15,4 @@ void print_alphabet(void)
 	}
 	_putchar(10);
 }
+
